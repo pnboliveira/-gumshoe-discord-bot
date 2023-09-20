@@ -1,4 +1,5 @@
 # Gumshoe - A TypeScript Discord bot
+# Gumshoe - A TypeScript Discord bot
 
 Gumshoe is a Discord bot built completely in TypeScript using the [discord.js](https://discord.js.org/) library.
 
