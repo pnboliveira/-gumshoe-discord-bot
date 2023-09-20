@@ -1,4 +1,4 @@
-# Gumshoe - A JavaScript Discord bot
+# Gumshoe - A TypeScript Discord bot
 
 Gumshoe is a Discord bot built completely in TypeScript using the [discord.js](https://discord.js.org/) library.
 
@@ -30,6 +30,12 @@ This will check the current commands and will update your server with a list of 
 ## Deployment
 
 Coming soon!
+
+## Testing
+This project uses ESLint to verify if the project has the proper code set up and written.
+To make sure your code is correct before you start the project, run `npm run test:lint`.
+
+This will check the current code and will alert you of any linting errors. (If you use VSCode and have the ESLint plugin installed, this will show automatically!)
 
 ## License
 
