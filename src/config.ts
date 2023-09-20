@@ -13,7 +13,7 @@ switch(true) {
         throw new Error("Please provide a valid Discord guild ID.");
 }
 
-export const config:any = {
+export const config = {
     DISCORD_TOKEN,
     APPLICATION_ID,
     GUILD_ID

@@ -2,10 +2,10 @@ import { Client, Collection } from 'discord.js';
 
 export class MySuperClient extends Client {
 
-	public commands: Collection<any, any>;
+	public commands: Collection<string, object>;
 
-	constructor(options?: any){
-		 super(options);
-		 this.commands = new Collection();
+	constructor(options){
+		super(options);
+		this.commands = new Collection();
 	}
 }

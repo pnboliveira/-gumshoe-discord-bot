@@ -8,16 +8,15 @@ async function generateFileAndFolder() {
     process.exit(1);
   }
 
-  let generateCommand = () => {
+  const generateCommand = () => {
     return `import { CommandInteraction, SlashCommandBuilder } from 'discord.js';
 
-    export const data = new SlashCommandBuilder()
-        .setName('${fileName}')
-        .setDescription('This is a Description example for the ${fileName} command.');
-    
-    export async function execute(interaction: CommandInteraction) {
-        return interaction.reply('test!');
-    };`;
+export const data = new SlashCommandBuilder()
+.setName('${fileName}')
+.setDescription('This is a Description example for the ${fileName} command.');
+export async function execute(interaction: CommandInteraction) {
+  return interaction.reply('test!');
+}`;
 }
 
   const folderName = args[0];
