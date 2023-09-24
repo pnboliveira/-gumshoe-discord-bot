@@ -17,15 +17,16 @@ Gumshoe is a Discord bot built completely in TypeScript using the [discord.js](h
 ## Features
 
 ### Command Generator
-To generate a new command, type `npm run create:command <category of command> <command name>` and this will:
+To generate a new command, type `npm run create:command` and follow the CLI instructions. This will:
 - Create a new category and command under `src/commands`
-- generate a base working template with a reply method.
+- Assign the chosen category for the command.
+- Generate a base working template with a command of your choosing: reply, role or a blank template.
 
 More information about commands can be found [on the official DiscordJS guide](https://discordjs.guide/creating-your-bot/slash-commands.html#before-you-continue).
 
 ### Command Deployments
 To deploy your newly created commands, run `npm run update:commands`.
-This will check the current commands and will update your server with a list of commands that the bot will execute.
+This will check the current commands and will update your server with a list that the bot can execute.
 
 ## Deployment
 
