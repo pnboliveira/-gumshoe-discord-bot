@@ -7,7 +7,7 @@ export default function roleAssignment(fileName) {
         .addUserOption(option =>
             option
                 .setName('target')
-                .setDescription('The member to ban')
+                .setDescription('The member to update the role of')
                 .setRequired(true))
         .addRoleOption(option =>
             option
