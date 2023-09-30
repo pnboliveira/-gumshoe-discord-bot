@@ -14,8 +14,8 @@
   "main": "index.js",
   "scripts": {
     "start": "ts-node src/index.ts",
-    "create:command": "ts-node src/utilities/generateCommand.ts",
-    "update:commands": "ts-node src/utilities/deploy-commands.ts",
+    "create:command": "ts-node src/utils/generateCommand.ts",
+    "update:commands": "ts-node src/utils/deploy-commands.ts",
     "test:lint": "eslint src/**/*.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
