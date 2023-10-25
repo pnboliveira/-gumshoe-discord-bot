@@ -27,6 +27,9 @@ export const config = {
     DISCORD_TOKEN,
     APPLICATION_ID,
     GUILD_ID,
+};
+
+export const dbConfig = {
     DB_NAME,
     DB_USER,
     DB_PASS,

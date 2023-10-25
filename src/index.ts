@@ -3,6 +3,7 @@ import * as path from 'path';
 import { Events, GatewayIntentBits, Collection } from 'discord.js';
 import { config } from './config';
 import { MySuperClient } from './types/client';
+import './utils/database';
 
 const client = new MySuperClient({ intents: [GatewayIntentBits.Guilds] });
 
