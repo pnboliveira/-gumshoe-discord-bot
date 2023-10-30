@@ -1,12 +1,13 @@
 # Gumshoe - A TypeScript Discord bot
 
-Gumshoe is a Discord bot built completely in TypeScript using the [discord.js](https://discord.js.org/) library.
+Gumshoe is a Discord bot built completely in TypeScript using the [discord.js](https://discord.js.org/) and [Sequelize](https://sequelize.org) libraries.
 
 ## Installation
 
 ### Requirements
 - Node v16.14.0 or newer;
 - A [free Discord Account](https://discord.com/register) and [server](https://support.discord.com/hc/en-us/articles/204849977-How-do-I-create-a-server-);
+- A SQL database (MariaDB, Postgres, MongoDB, etc)
 - An Application created in the Discord Developer Portal;
 
 ### Steps
@@ -30,7 +31,9 @@ This will check the current commands and will update your server with a list tha
 
 ## Deployment
 
-Coming soon!
+Part of the deployment will be done using Docker and Kubernetes.
+
+This section is coming soon!
 
 ## Testing
 This project uses ESLint to verify if the project has the proper code set up and written.

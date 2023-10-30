@@ -2,10 +2,10 @@ import * as fs from 'fs';
 import * as path from 'path';
 import { Events, GatewayIntentBits, Collection } from 'discord.js';
 import { config } from './config';
-import { MySuperClient } from './types/client';
-import './utils/database';
+import Client from './@types/Client';
+import seql from './utils/database';
 
-const client = new MySuperClient({ intents: [GatewayIntentBits.Guilds] });
+const client = new Client({ intents: [GatewayIntentBits.Guilds] });
 
 client.commands = new Collection();
 
@@ -51,6 +51,7 @@ export default async function initClient() {
 	});
 	
 	client.once(Events.ClientReady, c => {
+		seql.sync();
 		console.log(`Ready! You're now logged in as ${c.user.tag}`);
 	});
 	

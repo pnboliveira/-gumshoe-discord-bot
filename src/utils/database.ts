@@ -6,6 +6,7 @@ const seql = new Sequelize(dbConfig.DB_NAME, dbConfig.DB_USER, dbConfig.DB_PASS,
     dialect: dbConfig.DB_TYPE as Dialect,
     host: dbConfig.DB_HOST,
     logging: false,
+    models: [__dirname + '/../models']
 })
 
 export default seql;

@@ -1,6 +1,6 @@
 import { Client, Collection } from 'discord.js';
 
-export class MySuperClient extends Client {
+export default class extends Client {
 
 	public commands: Collection<string, object>;
 

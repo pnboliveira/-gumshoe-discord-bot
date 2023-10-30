@@ -18,6 +18,7 @@ export default function roleAssignment(fileName) {
         const member = interaction.options.getMember('target');
         const memberRoles = (interaction.member.roles as GuildMemberRoleManager).cache;
         if(memberRoles.some(role => role.name !== 'role name')) {
+            if (!interaction.isChatInputCommand()) return;
             const role = interaction.options.getRole('role');
             (member.roles as GuildMemberRoleManager).add(role as Role);
         }
